@@ -6,9 +6,9 @@
 //
 
 import Foundation
-public class ViewUserQueryDatabaseService: EnterpriseDatabaseService{
-    public override init() {}
-    
+public class ViewUserQueryDatabaseService: EnterpriseDatabaseService {
+    override public init() {}
+
     var resultQuery: [Query] = []
 }
 

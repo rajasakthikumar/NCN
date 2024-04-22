@@ -8,7 +8,7 @@
 import Foundation
 public class GetEnterpriseNameNetworkService {
     public init() { print("GetEnterpriseNameNetworkService") }
-    var network = NetworkManager.shared
+    var network = NetworkService.shared
 }
 
 extension GetEnterpriseNameNetworkService: GetEnterpriseNameNetworkServiceContract {

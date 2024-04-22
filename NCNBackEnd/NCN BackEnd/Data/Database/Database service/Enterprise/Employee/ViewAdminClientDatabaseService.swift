@@ -6,9 +6,9 @@
 //
 
 import Foundation
-public class ViewAdminClientDatabaseService: EnterpriseDatabaseService{
-    public override init() {}
-    
+public class ViewAdminClientDatabaseService: EnterpriseDatabaseService {
+    override public init() {}
+
     var resultUser: [User] = []
 }
 
@@ -28,11 +28,11 @@ extension ViewAdminClientDatabaseService: ViewAdminClientDatabaseServiceContract
                let email = dict["eMail"] as? String,
                let password = dict["password"] as? String,
                let mobileNumber = dict["mobileNumber"] as? Int,
-               let enterpriseId = dict["enterpriseId"] as? Int {
-                   let newUser = User(userName: userName, email: email, password: password, mobileNumber: mobileNumber, enterpriseId: enterpriseId)
-                   resultUser.append(newUser)
+               let enterpriseId = dict["enterpriseId"] as? Int
+            {
+                let newUser = User(userName: userName, email: email, password: password, mobileNumber: mobileNumber, enterpriseId: enterpriseId)
+                resultUser.append(newUser)
             }
-
         }
         success(resultUser)
     }

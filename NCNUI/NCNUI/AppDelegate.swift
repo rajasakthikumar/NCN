@@ -14,8 +14,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_: Notification) {
         // Insert code here to initialize your application
-        router = Router(window: window)
-        router?.launch()
+        window!.contentView = chunmaclass(frame: NSRect(x: 0, y: 0, width: 500, height: 500))
+//        window.backgroundColor = .white
+//        router = Router(window: window)
+//        router?.launch()
     }
 
     func applicationWillTerminate(_: Notification) {

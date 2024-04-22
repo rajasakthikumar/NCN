@@ -122,7 +122,7 @@ public class ZAppUserAgent {
     @discardableResult
     public func constructUserAgent() -> String {
         guard let appName = params.read({ $0[UserAgentParam.appName] as? String }), let buildVersion = params.read({ $0[UserAgentParam.buildVersion] as? String }), let browserInfo = params.read({ $0[UserAgentParam.browserInfo] as? String }) else {
-            logger.assert(false,"unable to fetch device informations")
+            logger.assert(false, "unable to fetch device informations")
             return ""
         }
 

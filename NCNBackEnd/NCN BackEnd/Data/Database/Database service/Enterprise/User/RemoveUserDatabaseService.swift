@@ -6,9 +6,8 @@
 //
 
 import Foundation
-public class RemoveUserDatabaseService: EnterpriseDatabaseService{
-    public override init() {}
-  
+public class RemoveUserDatabaseService: EnterpriseDatabaseService {
+    override public init() {}
 }
 
 extension RemoveUserDatabaseService: RemoveUserDatabaseServiceContract {

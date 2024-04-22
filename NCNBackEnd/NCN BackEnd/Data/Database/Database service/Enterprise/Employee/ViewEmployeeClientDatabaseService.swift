@@ -6,9 +6,9 @@
 //
 
 import Foundation
-public class ViewEmployeeClientDatabaseService: EnterpriseDatabaseService{
-    public override init() {}
-    
+public class ViewEmployeeClientDatabaseService: EnterpriseDatabaseService {
+    override public init() {}
+
     var resultUser: [User] = []
 }
 

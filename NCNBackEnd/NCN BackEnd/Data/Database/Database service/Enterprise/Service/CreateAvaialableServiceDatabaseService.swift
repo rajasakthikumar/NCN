@@ -6,9 +6,9 @@
 //
 
 import Foundation
-public class CreateAvailableServicesDatabaseService: EnterpriseDatabaseService{
-    public override init() {}
-    
+public class CreateAvailableServicesDatabaseService: EnterpriseDatabaseService {
+    override public init() {}
+
     func success(response _: String) {}
 }
 

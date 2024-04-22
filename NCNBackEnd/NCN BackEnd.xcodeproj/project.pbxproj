@@ -144,7 +144,7 @@
 		4376FE9A29F1B403008270FE /* UserSignUpDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4376FE9929F1B403008270FE /* UserSignUpDataManager.swift */; };
 		4376FE9C29F1B525008270FE /* UserSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4376FE9B29F1B525008270FE /* UserSignUp.swift */; };
 		4376FEA529F29224008270FE /* GetEnterpriseNetworkContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4376FEA429F29224008270FE /* GetEnterpriseNetworkContract.swift */; };
-		4376FEA829F293C7008270FE /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4376FEA729F293C7008270FE /* Network.swift */; };
+		4376FEA829F293C7008270FE /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4376FEA729F293C7008270FE /* NetworkService.swift */; };
 		4376FEAA29F2A2B9008270FE /* GetEnterpriseNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4376FEA929F2A2B9008270FE /* GetEnterpriseNetworkService.swift */; };
 		438386AF29C84BB600EAE655 /* SetEnterpriseName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438386AE29C84BB600EAE655 /* SetEnterpriseName.swift */; };
 		438386B529C8799E00EAE655 /* SetEnterpriseDatabaseContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438386B429C8799E00EAE655 /* SetEnterpriseDatabaseContract.swift */; };
@@ -190,12 +190,18 @@
 		4383D54F29D6ED1400938DAB /* ClientTrackServiceDatamanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4383D54E29D6ED1400938DAB /* ClientTrackServiceDatamanager.swift */; };
 		4383D55929D6F3E700938DAB /* EmployeeViewClientDatabaseContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4383D55829D6F3E700938DAB /* EmployeeViewClientDatabaseContract.swift */; };
 		4383D55B29D6F41900938DAB /* ViewEmployeeClientDatamanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4383D55A29D6F41900938DAB /* ViewEmployeeClientDatamanager.swift */; };
-		4383D57729DACB7600938DAB /* Data_Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4383D57629DACB7600938DAB /* Data_Base.swift */; };
-		438CFCD629C03AFB00B85225 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438CFCD529C03AFB00B85225 /* Database.swift */; };
+		4383D57729DACB7600938DAB /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4383D57629DACB7600938DAB /* DataBase.swift */; };
 		439415BF29F63A5F0012FB49 /* EnterpriseDatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439415BE29F63A5F0012FB49 /* EnterpriseDatabaseService.swift */; };
+		439415C229F69D800012FB49 /* SetEnterpriseNameNetwoekService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439415C129F69D800012FB49 /* SetEnterpriseNameNetwoekService.swift */; };
+		439415C429F69DCC0012FB49 /* SetEnterpriseNameNetworkContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439415C329F69DCC0012FB49 /* SetEnterpriseNameNetworkContract.swift */; };
+		439415CA29F7D53B0012FB49 /* UserLoginUserDefaultContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439415C929F7D53B0012FB49 /* UserLoginUserDefaultContract.swift */; };
+		439415CC29F7D5570012FB49 /* UserLoginKeychainContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439415CB29F7D5570012FB49 /* UserLoginKeychainContract.swift */; };
+		439415CE29F7D6EF0012FB49 /* UserLoginKeyChainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439415CD29F7D6EF0012FB49 /* UserLoginKeyChainService.swift */; };
+		439415D029F7D7040012FB49 /* UserLoginUserDefaultService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439415CF29F7D7040012FB49 /* UserLoginUserDefaultService.swift */; };
+		439415D229F7DA490012FB49 /* EnterpriseUserDefaultService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439415D129F7DA490012FB49 /* EnterpriseUserDefaultService.swift */; };
 		43C1B1D829EF023400EB4082 /* ViewUserQueryDatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C1B1D729EF023400EB4082 /* ViewUserQueryDatabaseService.swift */; };
 		43C1B1DA29EF026600EB4082 /* ViewEmployeeQueryDatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C1B1D929EF026600EB4082 /* ViewEmployeeQueryDatabaseService.swift */; };
-		43C1B1DC29EF0C4B00EB4082 /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C1B1DB29EF0C4B00EB4082 /* UserDefault.swift */; };
+		43C1B1DC29EF0C4B00EB4082 /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C1B1DB29EF0C4B00EB4082 /* UserDefaultManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -337,7 +343,7 @@
 		4376FE9929F1B403008270FE /* UserSignUpDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignUpDataManager.swift; sourceTree = "<group>"; };
 		4376FE9B29F1B525008270FE /* UserSignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignUp.swift; sourceTree = "<group>"; };
 		4376FEA429F29224008270FE /* GetEnterpriseNetworkContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEnterpriseNetworkContract.swift; sourceTree = "<group>"; };
-		4376FEA729F293C7008270FE /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		4376FEA729F293C7008270FE /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		4376FEA929F2A2B9008270FE /* GetEnterpriseNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEnterpriseNetworkService.swift; sourceTree = "<group>"; };
 		438386AE29C84BB600EAE655 /* SetEnterpriseName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetEnterpriseName.swift; sourceTree = "<group>"; };
 		438386B429C8799E00EAE655 /* SetEnterpriseDatabaseContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetEnterpriseDatabaseContract.swift; sourceTree = "<group>"; };
@@ -382,13 +388,19 @@
 		4383D54E29D6ED1400938DAB /* ClientTrackServiceDatamanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientTrackServiceDatamanager.swift; sourceTree = "<group>"; };
 		4383D55829D6F3E700938DAB /* EmployeeViewClientDatabaseContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeViewClientDatabaseContract.swift; sourceTree = "<group>"; };
 		4383D55A29D6F41900938DAB /* ViewEmployeeClientDatamanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewEmployeeClientDatamanager.swift; sourceTree = "<group>"; };
-		4383D57629DACB7600938DAB /* Data_Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data_Base.swift; sourceTree = "<group>"; };
-		438CFCD529C03AFB00B85225 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		4383D57629DACB7600938DAB /* DataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
 		439415BE29F63A5F0012FB49 /* EnterpriseDatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterpriseDatabaseService.swift; sourceTree = "<group>"; };
+		439415C129F69D800012FB49 /* SetEnterpriseNameNetwoekService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetEnterpriseNameNetwoekService.swift; sourceTree = "<group>"; };
+		439415C329F69DCC0012FB49 /* SetEnterpriseNameNetworkContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetEnterpriseNameNetworkContract.swift; sourceTree = "<group>"; };
+		439415C929F7D53B0012FB49 /* UserLoginUserDefaultContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginUserDefaultContract.swift; sourceTree = "<group>"; };
+		439415CB29F7D5570012FB49 /* UserLoginKeychainContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginKeychainContract.swift; sourceTree = "<group>"; };
+		439415CD29F7D6EF0012FB49 /* UserLoginKeyChainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginKeyChainService.swift; sourceTree = "<group>"; };
+		439415CF29F7D7040012FB49 /* UserLoginUserDefaultService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginUserDefaultService.swift; sourceTree = "<group>"; };
+		439415D129F7DA490012FB49 /* EnterpriseUserDefaultService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterpriseUserDefaultService.swift; sourceTree = "<group>"; };
 		439A42F229C069DC00A12BD7 /* AddNewUserDatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewUserDatabaseService.swift; sourceTree = "<group>"; };
 		43C1B1D729EF023400EB4082 /* ViewUserQueryDatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewUserQueryDatabaseService.swift; sourceTree = "<group>"; };
 		43C1B1D929EF026600EB4082 /* ViewEmployeeQueryDatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewEmployeeQueryDatabaseService.swift; sourceTree = "<group>"; };
-		43C1B1DB29EF0C4B00EB4082 /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
+		43C1B1DB29EF0C4B00EB4082 /* UserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
 		AD752DDA695B02ED728742BA /* Pods_NCN_BackEnd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NCN_BackEnd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAE83FD604206AC307CB1725 /* Pods-NCN BackEnd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NCN BackEnd.debug.xcconfig"; path = "Target Support Files/Pods-NCN BackEnd/Pods-NCN BackEnd.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -476,9 +488,9 @@
 		432ADE6D29BF0CCF00E9C70F /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				439415C629F796AB0012FB49 /* KeyChain  */,
+				439415C529F796900012FB49 /* UserDeafult */,
 				4376FEA629F293B1008270FE /* Network */,
-				43C1B1DB29EF0C4B00EB4082 /* UserDefault.swift */,
-				436BACFA29EFDB0F00DE3820 /* KeychainManager.swift */,
 				432ADE7429BF0FF100E9C70F /* Datamanager */,
 				432ADE7329BF0FCF00E9C70F /* Database */,
 			);
@@ -489,8 +501,7 @@
 			isa = PBXGroup;
 			children = (
 				438386FF29CC6C8E00EAE655 /* Database service */,
-				438CFCD529C03AFB00B85225 /* Database.swift */,
-				4383D57629DACB7600938DAB /* Data_Base.swift */,
+				4383D57629DACB7600938DAB /* DataBase.swift */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -498,7 +509,9 @@
 		432ADE7429BF0FF100E9C70F /* Datamanager */ = {
 			isa = PBXGroup;
 			children = (
-				4376FEA329F291F6008270FE /* NetworkContract */,
+				439415C829F7D46B0012FB49 /* KeyChain Contract */,
+				439415C729F7D44C0012FB49 /* UserDefault Contract */,
+				4376FEA329F291F6008270FE /* Network Contract */,
 				436BAD0529EFFFC400DE3820 /* Enterprise Datamanager */,
 				4334389A29C457FA0056CF03 /* Database Contract */,
 			);
@@ -897,19 +910,21 @@
 			path = Subscription;
 			sourceTree = "<group>";
 		};
-		4376FEA329F291F6008270FE /* NetworkContract */ = {
+		4376FEA329F291F6008270FE /* Network Contract */ = {
 			isa = PBXGroup;
 			children = (
 				4376FEA429F29224008270FE /* GetEnterpriseNetworkContract.swift */,
+				439415C329F69DCC0012FB49 /* SetEnterpriseNameNetworkContract.swift */,
 			);
-			path = NetworkContract;
+			path = "Network Contract";
 			sourceTree = "<group>";
 		};
 		4376FEA629F293B1008270FE /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				4376FEA729F293C7008270FE /* Network.swift */,
+				4376FEA729F293C7008270FE /* NetworkService.swift */,
 				4376FEA929F2A2B9008270FE /* GetEnterpriseNetworkService.swift */,
+				439415C129F69D800012FB49 /* SetEnterpriseNameNetwoekService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -953,6 +968,41 @@
 				436BAD7629F128AA00DE3820 /* Enterprise */,
 			);
 			path = "Database service";
+			sourceTree = "<group>";
+		};
+		439415C529F796900012FB49 /* UserDeafult */ = {
+			isa = PBXGroup;
+			children = (
+				43C1B1DB29EF0C4B00EB4082 /* UserDefaultManager.swift */,
+				439415D129F7DA490012FB49 /* EnterpriseUserDefaultService.swift */,
+				439415CF29F7D7040012FB49 /* UserLoginUserDefaultService.swift */,
+			);
+			path = UserDeafult;
+			sourceTree = "<group>";
+		};
+		439415C629F796AB0012FB49 /* KeyChain  */ = {
+			isa = PBXGroup;
+			children = (
+				436BACFA29EFDB0F00DE3820 /* KeychainManager.swift */,
+				439415CD29F7D6EF0012FB49 /* UserLoginKeyChainService.swift */,
+			);
+			path = "KeyChain ";
+			sourceTree = "<group>";
+		};
+		439415C729F7D44C0012FB49 /* UserDefault Contract */ = {
+			isa = PBXGroup;
+			children = (
+				439415C929F7D53B0012FB49 /* UserLoginUserDefaultContract.swift */,
+			);
+			path = "UserDefault Contract";
+			sourceTree = "<group>";
+		};
+		439415C829F7D46B0012FB49 /* KeyChain Contract */ = {
+			isa = PBXGroup;
+			children = (
+				439415CB29F7D5570012FB49 /* UserLoginKeychainContract.swift */,
+			);
+			path = "KeyChain Contract";
 			sourceTree = "<group>";
 		};
 		F52CFE784AF8E7A826E83D4A /* Pods */ = {
@@ -1071,7 +1121,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4376FEA829F293C7008270FE /* Network.swift in Sources */,
+				4376FEA829F293C7008270FE /* NetworkService.swift in Sources */,
 				43023A9429E3287300FC62BE /* ViewExpiredService.swift in Sources */,
 				432905A529CDAFD1002EC379 /* AddNewEmployee.swift in Sources */,
 				436BAD6B29F127BB00DE3820 /* UserViewQueryDataContract.swift in Sources */,
@@ -1119,7 +1169,8 @@
 				4334389E29C458F30056CF03 /* AddNewUserDatabaseContract.swift in Sources */,
 				43023A4A29E1DEF000FC62BE /* AssignQuery.swift in Sources */,
 				438386B729C87A0900EAE655 /* SetEnterpriseDataManager.swift in Sources */,
-				4383D57729DACB7600938DAB /* Data_Base.swift in Sources */,
+				4383D57729DACB7600938DAB /* DataBase.swift in Sources */,
+				439415C429F69DCC0012FB49 /* SetEnterpriseNameNetworkContract.swift in Sources */,
 				4376FEA529F29224008270FE /* GetEnterpriseNetworkContract.swift in Sources */,
 				4360E5A629EBE19900E02F05 /* SearchClientDatabaseService.swift in Sources */,
 				43023AFD29E40DF200FC62BE /* RemoveEmployeeDatabaseContract.swift in Sources */,
@@ -1127,6 +1178,7 @@
 				43023AA029E334E000FC62BE /* ModifyEmployeeDetailsDatabaseContract.swift in Sources */,
 				4376FE9A29F1B403008270FE /* UserSignUpDataManager.swift in Sources */,
 				43023A9629E328FD00FC62BE /* ViewExpiredServiceDataManager.swift in Sources */,
+				439415D029F7D7040012FB49 /* UserLoginUserDefaultService.swift in Sources */,
 				4383D54F29D6ED1400938DAB /* ClientTrackServiceDatamanager.swift in Sources */,
 				4329061129D3F849002EC379 /* BuyServiceDatamanager.swift in Sources */,
 				4383D52729D6DE6A00938DAB /* TrackQueryDatabaseContract.swift in Sources */,
@@ -1139,6 +1191,7 @@
 				4334389C29C458590056CF03 /* UserLoginDatabaseContract.swift in Sources */,
 				43023AB329E34C4800FC62BE /* ModifyUserDeatails.swift in Sources */,
 				436BAD6D29F127BB00DE3820 /* DeleteQueryDataContract.swift in Sources */,
+				439415CA29F7D53B0012FB49 /* UserLoginUserDefaultContract.swift in Sources */,
 				43023B0F29E415F600FC62BE /* RemoveUserDataManager.swift in Sources */,
 				43023A5029E1E43400FC62BE /* AssignQueryDatabaseContract.swift in Sources */,
 				43023AFF29E40E7400FC62BE /* RemoveEmployeeDataManager.swift in Sources */,
@@ -1161,6 +1214,7 @@
 				438386AF29C84BB600EAE655 /* SetEnterpriseName.swift in Sources */,
 				436BAD5E29F127BB00DE3820 /* BuyServiceDataContract.swift in Sources */,
 				43023B1F29E42B6800FC62BE /* RemoveAvailableServiceDatManager.swift in Sources */,
+				439415D229F7DA490012FB49 /* EnterpriseUserDefaultService.swift in Sources */,
 				43023AAE29E34BF800FC62BE /* ModifyUserDeatilsDatabasecontract.swift in Sources */,
 				4376FE9C29F1B525008270FE /* UserSignUp.swift in Sources */,
 				4383D4E229D5756B00938DAB /* SearchClient.swift in Sources */,
@@ -1179,6 +1233,7 @@
 				4360E5BC29EDAD0F00E02F05 /* TrackServiceDatabaseService.swift in Sources */,
 				4383D52929D6DE9900938DAB /* TrackQueryDatamanager.swift in Sources */,
 				43023A7029E2EC7900FC62BE /* ModifyAvaialableServiceDatabaseContract.swift in Sources */,
+				439415CE29F7D6EF0012FB49 /* UserLoginKeyChainService.swift in Sources */,
 				432905C429D184D3002EC379 /* CreateAvailableSubscriptionDatabaseContract.swift in Sources */,
 				43023AE129E3E06900FC62BE /* ViewEmployeeQuery.swift in Sources */,
 				436BAD7529F127BB00DE3820 /* ViewAdminClientDataContract.swift in Sources */,
@@ -1201,7 +1256,7 @@
 				43023ABD29E3ABCA00FC62BE /* DeleteExpiredServiceDatabaseContract.swift in Sources */,
 				4360E5A429E992CD00E02F05 /* DeleteQueryDatabaseService.swift in Sources */,
 				43023A8629E3078A00FC62BE /* ModifyAvaialableSubscriptionDataManager.swift in Sources */,
-				43C1B1DC29EF0C4B00EB4082 /* UserDefault.swift in Sources */,
+				43C1B1DC29EF0C4B00EB4082 /* UserDefaultManager.swift in Sources */,
 				436BAD5B29F127BB00DE3820 /* CreateAvailableSubscriptionDataContract.swift in Sources */,
 				43023B1D29E42B4F00FC62BE /* RemoveServiceDatabaseService.swift in Sources */,
 				4383D50129D6B95000938DAB /* ViewAdminClientDatabaseContract.swift in Sources */,
@@ -1223,10 +1278,10 @@
 				436BAD5F29F127BB00DE3820 /* TrackServiceDataContract.swift in Sources */,
 				43023A8229E3063600FC62BE /* ModifyAvailableSubscription.swift in Sources */,
 				432905EA29D1ABDE002EC379 /* ViewSubscription.swift in Sources */,
+				439415C229F69D800012FB49 /* SetEnterpriseNameNetwoekService.swift in Sources */,
 				438386E629CC253F00EAE655 /* Employee.swift in Sources */,
 				4383D4DE29D570E400938DAB /* ViewEmployeeClient.swift in Sources */,
 				4360E5AE29EC616400E02F05 /* ViewAdminClientDatabaseService.swift in Sources */,
-				438CFCD629C03AFB00B85225 /* Database.swift in Sources */,
 				4383870029CC6CA000EAE655 /* AddNewUserDatabaseService.swift in Sources */,
 				43023ADF29E3DE1C00FC62BE /* ViewEmployeeQueryDatabaseContract.swift in Sources */,
 				438386BF29C88E4100EAE655 /* CreateService.swift in Sources */,
@@ -1252,6 +1307,7 @@
 				43023B2B29E4397500FC62BE /* RemoveSubscription.swift in Sources */,
 				43023AF929E40DA600FC62BE /* RemoveEmployee.swift in Sources */,
 				432905A929CDC8D8002EC379 /* AddNewEmployeeDatabaseContract.swift in Sources */,
+				439415CC29F7D5570012FB49 /* UserLoginKeychainContract.swift in Sources */,
 				43023A7229E2ED5400FC62BE /* ModifyAvailableServiceDataManager.swift in Sources */,
 				4334389529C454330056CF03 /* AddNewUser.swift in Sources */,
 				43023AEF29E3F1BC00FC62BE /* DeleteQueryDataManager.swift in Sources */,

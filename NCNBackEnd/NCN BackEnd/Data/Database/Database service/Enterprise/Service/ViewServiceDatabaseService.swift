@@ -6,9 +6,9 @@
 //
 
 import Foundation
-public class ViewServiceDatabaseService:  EnterpriseDatabaseService{
-    public override init() { print("db created") }
-    
+public class ViewServiceDatabaseService: EnterpriseDatabaseService {
+    override public init() { print("db created") }
+
     var result: [AvailableService] = []
 }
 

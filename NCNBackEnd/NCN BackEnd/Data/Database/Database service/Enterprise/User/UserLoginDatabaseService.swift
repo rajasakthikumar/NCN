@@ -6,10 +6,8 @@
 //
 
 import Foundation
-public class UserLoginDatabaseService: EnterpriseDatabaseService{
-    
-
-    public override init() {}
+public class UserLoginDatabaseService: EnterpriseDatabaseService {
+    override public init() {}
 }
 
 extension UserLoginDatabaseService: UserLoginDatabaseServiceContract {

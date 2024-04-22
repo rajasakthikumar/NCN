@@ -6,9 +6,8 @@
 //
 
 import Foundation
-public class DeleteQueryDatabaseService: EnterpriseDatabaseService{
-    public override init() {}
-    
+public class DeleteQueryDatabaseService: EnterpriseDatabaseService {
+    override public init() {}
 }
 
 extension DeleteQueryDatabaseService: DeleteQueryDatabaseServiceContract {

@@ -7,7 +7,7 @@
 
 import Foundation
 public class RemoveSubscriptionDatabaseService: EnterpriseDatabaseService {
-    public override init() {}
+    override public init() {}
 }
 
 extension RemoveSubscriptionDatabaseService: RemoveSubscriptionDatabaseServiceContract {

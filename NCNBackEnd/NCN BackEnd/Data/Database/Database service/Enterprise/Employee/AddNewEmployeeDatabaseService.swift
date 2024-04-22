@@ -7,19 +7,17 @@
 
 import Foundation
 public final class AddNewEmployeeDatabaseService: EnterpriseDatabaseService {
-    public override init() {}
-    
+    override public init() {}
 }
 
 extension AddNewEmployeeDatabaseService: AddNewEmployeeDatabaseServiceContract {
-    
     public func addEmployeeDetails(userName: String, password: String, email: String, mobilePhone: Int64, employeeType: Int, enterpriseId: Int, success: @escaping (String) -> Void, failure: @escaping (String) -> Void) {
         var userId = 0
         let userColumnName = ["userName", "password", "email", "mobileNumber", "enterpriseId"]
         let userColumndata: [Any] = [userName, password, email, mobilePhone, enterpriseId]
-        
+
         let employeeColumnName = ["employeeTypeId", "userId"]
-        
+
         // entering in user table
         db.insertStatement(tableName: "users", columnName: userColumnName, insertData: userColumndata, success: success, failure: failure)
         // entering in employee table

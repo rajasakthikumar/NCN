@@ -6,10 +6,8 @@
 //
 
 import Foundation
-public class ModifyEmployeeDetailsDatabaseService: EnterpriseDatabaseService{
-    
-
-    public override init() {}
+public class ModifyEmployeeDetailsDatabaseService: EnterpriseDatabaseService {
+    override public init() {}
 }
 
 extension ModifyEmployeeDetailsDatabaseService: ModifyEmployeeDetailsDatabaseServiceContract {

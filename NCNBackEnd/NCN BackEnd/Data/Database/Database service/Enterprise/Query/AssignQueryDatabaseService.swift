@@ -7,9 +7,7 @@
 
 import Foundation
 public class AssignQueryDatabaseService: EnterpriseDatabaseService {
-    
-
-    public override init() {}
+    override public init() {}
 }
 
 extension AssignQueryDatabaseService: AssignQueryDatabaseServiceContract {

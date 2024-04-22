@@ -6,10 +6,10 @@
 //
 
 import Foundation
-public class DeleteExpiredServiceDatabaseService: EnterpriseDatabaseService{
-    public override init() {}
-    
+public class DeleteExpiredServiceDatabaseService: EnterpriseDatabaseService {
+    override public init() {}
 }
+
 extension DeleteExpiredServiceDatabaseService: DeleteExpiredServiceDatabaseServiceContract {
     public func deleteExpiredService(success: @escaping (String) -> Void, failure: @escaping (String) -> Void) {
         let dateFormatter = DateFormatter()

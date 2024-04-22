@@ -6,10 +6,9 @@
 //
 
 import Foundation
-public class ViewSubscriptionDatabaseService: EnterpriseDatabaseService{
-    public override init() {}
+public class ViewSubscriptionDatabaseService: EnterpriseDatabaseService {
+    override public init() {}
 
-   
     var result: [AvailableSubscription] = []
 }
 

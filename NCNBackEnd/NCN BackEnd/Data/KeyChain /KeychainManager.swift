@@ -19,11 +19,11 @@ class KeychainManager {
         case invalidItemFormat
     }
 
-    func save(email: String, password: String) throws {
+    func save(userName: String, password: String, applicationName: String) throws {
         let passwordData = password.data(using: .utf8)!
         let query: [String: AnyObject] = [
-            kSecAttrService as String: "com.zoho.NCN" as AnyObject,
-            kSecAttrAccount as String: email as AnyObject,
+            kSecAttrService as String: applicationName as AnyObject,
+            kSecAttrAccount as String: userName as AnyObject,
             kSecClass as String: kSecClassGenericPassword,
             kSecValueData as String: passwordData as AnyObject,
         ]
@@ -35,11 +35,11 @@ class KeychainManager {
         }
     }
 
-    func update(email: String, newPassword: String) throws {
+    func update(userName: String, newPassword: String, applicationName: String) throws {
         let passwordData = newPassword.data(using: .utf8)!
         let query: [String: AnyObject] = [
-            kSecAttrService as String: "com.zoho.NCN" as AnyObject,
-            kSecAttrAccount as String: email as AnyObject,
+            kSecAttrService as String: applicationName as AnyObject,
+            kSecAttrAccount as String: userName as AnyObject,
             kSecClass as String: kSecClassGenericPassword,
         ]
 
@@ -54,10 +54,10 @@ class KeychainManager {
         }
     }
 
-    func retrieve(email: String) throws -> String {
+    func retrieve(userName: String, applicationName: String) throws -> String {
         let query: [String: AnyObject] = [
-            kSecAttrService as String: "com.zoho.NCN" as AnyObject,
-            kSecAttrAccount as String: email as AnyObject,
+            kSecAttrService as String: applicationName as AnyObject,
+            kSecAttrAccount as String: userName as AnyObject,
             kSecClass as String: kSecClassGenericPassword,
             kSecMatchLimit as String: kSecMatchLimitOne,
             kSecReturnData as String: kCFBooleanTrue,
@@ -79,10 +79,10 @@ class KeychainManager {
         return password
     }
 
-    func delete(email: String) throws {
+    func delete(userName: String, applicationName: String) throws {
         let query: [String: AnyObject] = [
-            kSecAttrService as String: "com.zoho.NCN" as AnyObject,
-            kSecAttrAccount as String: email as AnyObject,
+            kSecAttrService as String: applicationName as AnyObject,
+            kSecAttrAccount as String: userName as AnyObject,
             kSecClass as String: kSecClassGenericPassword,
         ]
 

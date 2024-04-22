@@ -6,10 +6,8 @@
 //
 
 import Foundation
-public class CreateQueryDatabaseService: EnterpriseDatabaseService{
-    public override init() {}
-
-  
+public class CreateQueryDatabaseService: EnterpriseDatabaseService {
+    override public init() {}
 }
 
 extension CreateQueryDatabaseService: CreateQueryDatabaseServiceContract {

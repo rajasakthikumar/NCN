@@ -7,9 +7,10 @@
 
 import Foundation
 public class SearchEmployeeDatabaseService:
-EnterpriseDatabaseService{
-    public override init() {}
-   
+    EnterpriseDatabaseService
+{
+    override public init() {}
+
     var resultEmployee: [Employee] = []
 }
 

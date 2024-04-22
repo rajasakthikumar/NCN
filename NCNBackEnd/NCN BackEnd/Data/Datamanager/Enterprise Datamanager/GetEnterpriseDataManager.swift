@@ -19,10 +19,7 @@ public class GetEnterpriseNameDataManager {
     }
 
     private func failure(response: String, callback: (String) -> Void) {
-        if response == "No avaialable service is found " {
-            let error = "Sevice with this service id Doesn't exist"
-            callback(error)
-        }
+        callback(response)
     }
 }
 

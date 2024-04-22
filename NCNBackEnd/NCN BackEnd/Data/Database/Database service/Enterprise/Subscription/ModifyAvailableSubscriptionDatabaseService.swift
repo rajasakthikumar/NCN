@@ -6,9 +6,8 @@
 //
 
 import Foundation
-public class ModifyAvailableSubscriptionDatabaseService:EnterpriseDatabaseService {
-    public override init() {}
-    
+public class ModifyAvailableSubscriptionDatabaseService: EnterpriseDatabaseService {
+    override public init() {}
 }
 
 extension ModifyAvailableSubscriptionDatabaseService: ModifyAvailableSubscriptionDatabaseServiceContract {

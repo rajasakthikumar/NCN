@@ -6,9 +6,8 @@
 //
 
 import Foundation
-public class ViewExpiredServiceDatabaseService: EnterpriseDatabaseService{
-    public override init() {}
-    
+public class ViewExpiredServiceDatabaseService: EnterpriseDatabaseService {
+    override public init() {}
 
     var resultedArray: [[String]] = []
 }

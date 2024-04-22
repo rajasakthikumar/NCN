@@ -2,12 +2,10 @@ enum NetworkError: Error {
     case invalidURL, networkError(Error), serializationError, invalidResponse, invalidData
 }
 
-class NetworkManager {
-    static let shared = NetworkManager()
+class NetworkService {
+    static let shared = NetworkService()
 
-    private let baseURL = "http://127.0.0.1:8000"
-
-    private init() { print("NetworkManager called ") }
+    private init() { print("NetworkService called ") }
 
     func getData(baseURL: String, apiKey: String? = nil, endpoint: String, id: Int, success: @escaping ([String: Any]) -> Void, failure: @escaping (NetworkError) -> Void) {
         print("get data")
@@ -52,7 +50,7 @@ class NetworkManager {
         task.resume()
     }
 
-    func postData(baseURL: String,apiKey: String? = nil, endpoint: String, id: Int, data: [String: Any], success: @escaping (String) -> Void, failure: @escaping (NetworkError) -> Void) {
+    func postData(baseURL: String, apiKey: String? = nil, endpoint: String, id: Int, data: [String: Any], success: @escaping (String) -> Void, failure: @escaping (NetworkError) -> Void) {
         let urlString = baseURL + "/\(endpoint)/\(id)"
         guard let url = URL(string: urlString) else {
             failure(.invalidURL)
@@ -107,4 +105,3 @@ class NetworkManager {
         task.resume()
     }
 }
-

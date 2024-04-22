@@ -6,9 +6,8 @@
 //
 
 import Foundation
-public class ClientTrackServiceDatabaseService: EnterpriseDatabaseService{
-    public override init() {}
-    
+public class ClientTrackServiceDatabaseService: EnterpriseDatabaseService {
+    override public init() {}
 }
 
 extension ClientTrackServiceDatabaseService: ClientTrackServiceDatabaseServiceContract {

@@ -6,8 +6,8 @@
 //
 
 import Foundation
-public class AssignQueryStatusDatabaseService: EnterpriseDatabaseService{
-    public override init() {}
+public class AssignQueryStatusDatabaseService: EnterpriseDatabaseService {
+    override public init() {}
 }
 
 extension AssignQueryStatusDatabaseService: AssignQueryStatusDatabaseServiceContract {

@@ -114,6 +114,7 @@
 		4383D55129D6ED5700938DAB /* TrackServiceClientPresentationContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4383D55029D6ED5700938DAB /* TrackServiceClientPresentationContract.swift */; };
 		4383D55529D6EDD100938DAB /* TrackServiceClientPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4383D55429D6EDD100938DAB /* TrackServiceClientPresenter.swift */; };
 		4383D55729D6EE6E00938DAB /* TrackServiceClientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4383D55629D6EE6E00938DAB /* TrackServiceClientView.swift */; };
+		4394168A29FB9E310012FB49 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4394168929FB9E310012FB49 /* test.swift */; };
 		4BBF8F49A38F10E132833800 /* Pods_NCNUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 737E18CF52F3D08334003F39 /* Pods_NCNUI.framework */; };
 /* End PBXBuildFile section */
 
@@ -228,6 +229,7 @@
 		4383D55029D6ED5700938DAB /* TrackServiceClientPresentationContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackServiceClientPresentationContract.swift; sourceTree = "<group>"; };
 		4383D55429D6EDD100938DAB /* TrackServiceClientPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackServiceClientPresenter.swift; sourceTree = "<group>"; };
 		4383D55629D6EE6E00938DAB /* TrackServiceClientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackServiceClientView.swift; sourceTree = "<group>"; };
+		4394168929FB9E310012FB49 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		737E18CF52F3D08334003F39 /* Pods_NCNUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NCNUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		759FEC49386CCF29AFDAD3F3 /* Pods-NCNUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NCNUI.release.xcconfig"; path = "Target Support Files/Pods-NCNUI/Pods-NCNUI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -298,6 +300,7 @@
 			isa = PBXGroup;
 			children = (
 				436BAD2229F1260B00DE3820 /* Enterprise */,
+				4394168929FB9E310012FB49 /* test.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -724,6 +727,7 @@
 				432905A129CD8E05002EC379 /* AddNewUserview.swift in Sources */,
 				436BAD0E29F11FB000DE3820 /* ViewAdminClientView.swift in Sources */,
 				43023A5229E1E57700FC62BE /* AssignQueryPresentationContract.swift in Sources */,
+				4394168A29FB9E310012FB49 /* test.swift in Sources */,
 				43023AAA29E33BA400FC62BE /* ModifyEmployeeDetailsView.swift in Sources */,
 				438386FC29CC4F0400EAE655 /* ViewServicePresenter.swift in Sources */,
 				43023A8E29E3091000FC62BE /* ModifyAvailableSubscriptionView.swift in Sources */,

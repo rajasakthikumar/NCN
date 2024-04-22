@@ -7,8 +7,8 @@
 
 import Foundation
 public class TrackQueryDatabasService: EnterpriseDatabaseService {
-    public override init() {}
-    
+    override public init() {}
+
     var resultQuery: [Query] = []
 }
 

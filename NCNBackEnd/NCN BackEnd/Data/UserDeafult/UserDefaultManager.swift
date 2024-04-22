@@ -21,11 +21,19 @@ class UserDefaultsManager {
         defaults.set(value, forKey: key)
     }
 
+    func saveBoolData(key: String, value: Bool) {
+        defaults.set(value, forKey: key)
+    }
+
     func retrieveIntData(key: String) -> Int? {
         return defaults.integer(forKey: key)
     }
 
     func retrieveStringData(key: String) -> String? {
         return defaults.string(forKey: key)
+    }
+
+    func retriveBoolData(key: String) -> Bool? {
+        return defaults.bool(forKey: key)
     }
 }

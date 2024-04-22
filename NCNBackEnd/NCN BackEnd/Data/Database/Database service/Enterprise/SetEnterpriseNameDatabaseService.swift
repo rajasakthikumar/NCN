@@ -6,14 +6,12 @@
 //
 
 import Foundation
-public class SetEnterpriseDatabaseService: EnterpriseDatabaseService{
-   
-
-    public override init() {}
+public class SetEnterpriseDatabaseService: EnterpriseDatabaseService {
+    override public init() {}
 }
 
 extension SetEnterpriseDatabaseService: SetEnterpriseDatabaseServiceContract {
-    public func setEnterpriseName(enterpriseName : String, success: @escaping (String) -> Void, failure: @escaping (String) -> Void) {
+    public func setEnterpriseName(enterpriseName: String, success: @escaping (String) -> Void, failure: @escaping (String) -> Void) {
         db.insertStatement(tableName: "enterprise", columnName: ["enterpriseName"], insertData: [enterpriseName], success: success, failure: failure)
     }
 }

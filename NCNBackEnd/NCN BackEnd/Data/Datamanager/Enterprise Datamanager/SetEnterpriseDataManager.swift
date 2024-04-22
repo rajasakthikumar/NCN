@@ -18,10 +18,7 @@ public class SetEnterpriseNameDataManager {
     }
 
     private func failure(response: String, callback: (String) -> Void) {
-        if response == "No Data" {
-            let error = "User already exist"
-            callback(error)
-        }
+        callback(response)
     }
 }
 

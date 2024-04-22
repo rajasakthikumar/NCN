@@ -7,8 +7,7 @@
 
 import Foundation
 public class CreateAvailableSubscriptionDatabaseService: EnterpriseDatabaseService {
-    public override init() {}
-    
+    override public init() {}
 }
 
 extension CreateAvailableSubscriptionDatabaseService: CreateAvailableSubscriptionDatabaseServiceContract {
@@ -30,7 +29,8 @@ extension CreateAvailableSubscriptionDatabaseService: CreateAvailableSubscriptio
         for dict in resultedArray {
             if let subscriptionId = dict["serviceId"] as? Int,
                let subscriptionPackageType = dict["serviceTitle"] as? String,
-               let subscriptionCountLimit = dict["serviceDescription"] as? String {
+               let subscriptionCountLimit = dict["serviceDescription"] as? String
+            {
                 let newAvailableSubscription = AvailableService(serviceId: subscriptionId, serviceTitle: subscriptionPackageType, serviceDescription: subscriptionCountLimit)
                 res.append(newAvailableSubscription)
             }
